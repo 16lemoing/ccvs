@@ -1,3 +1,3 @@
 ## Results
 
-Inference outputs will be save here.
+Inference outputs will be saved here.

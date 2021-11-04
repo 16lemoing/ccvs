@@ -1,5 +1,7 @@
 # CCVS - Official PyTorch Implementation
 
+Code for NeurIPS paper [CCVS: Context-aware Controllable Video Synthesis](https://arxiv.org/abs/2107.08037).
+
 <p align="center"><img width="85%" src="assets/teaser.png" /></p>
 
 > **CCVS: Context-aware Controllable Video Synthesis**<br>
@@ -220,11 +222,11 @@ One can use the `--idx` flag to compute PSNR / SSIM for specific timesteps.
 
 If you find this code useful in your research, please consider citing:
 
-    @article{lemoing2021ccvs,
-      title   = {{CCVS}: Context-aware Controllable Video Synthesis},
-      author  = {Guillaume Le Moing and Jean Ponce and Cordelia Schmid},
-      journal = {arXiv preprint},
-      year    = {2021}
+    @inproceedings{lemoing2021ccvs,
+      title     = {{CCVS}: Context-aware Controllable Video Synthesis},
+      author    = {Guillaume Le Moing and Jean Ponce and Cordelia Schmid},
+      booktitle = {NeurIPS},
+      year      = {2021}
     }
 
 ## Acknowledgments

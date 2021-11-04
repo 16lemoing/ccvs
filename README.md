@@ -1,6 +1,6 @@
 # CCVS - Official PyTorch Implementation
 
-Code for NeurIPS paper [CCVS: Context-aware Controllable Video Synthesis](https://arxiv.org/abs/2107.08037).
+Code for NeurIPS'21 paper [CCVS: Context-aware Controllable Video Synthesis](https://arxiv.org/abs/2107.08037).
 
 <p align="center"><img width="85%" src="assets/teaser.png" /></p>
 

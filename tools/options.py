@@ -437,6 +437,16 @@ class Options():
                 parser.set_defaults(**{f"{prefix}no_h_flip": True})
                 parser.set_defaults(**{f"{prefix}from_vid": True})
                 parser.set_defaults(**{f"{prefix}fps": 30})
+            if getattr(opt, f"{prefix}dataset") == "ucf101":
+                parser.set_defaults(**{f"{prefix}dataroot": "datasets/ucf101"})
+                parser.set_defaults(**{f"{prefix}true_ratio": 1})
+                parser.set_defaults(**{f"{prefix}aspect_ratio": 1})
+                parser.set_defaults(**{f"{prefix}true_dim": 256})
+                parser.set_defaults(**{f"{prefix}categories": None})
+                parser.set_defaults(**{f"{prefix}no_h_flip": True})
+                parser.set_defaults(**{f"{prefix}from_vid": True})
+                parser.set_defaults(**{f"{prefix}fps": 4})
+                parser.set_defaults(**{f"{prefix}resize_center_crop_img": 256})
         return parser
 
     def gather_options(self):

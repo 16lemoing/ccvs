@@ -84,6 +84,18 @@ Download the data from [this link](https://www.dropbox.com/s/7ykgybrc8nb3lgf/Aud
 unzip datasets/drums/AudioSet_Drums.zip -d datasets/drums
 ```
 
+**UCF101** - ([Repo](https://www.crcv.ucf.edu/data/UCF101.php))
+
+Create corresponding directory:
+```
+mkdir datasets/ucf101
+```
+Download the data from [this link](https://www.crcv.ucf.edu/data/UCF101/UCF101.rar) and run:
+```
+mkdir datasets/ucf101/videos
+unrar e datasets/ucf101/UCF101.rar datasets/ucf101/videos
+```
+
 ## Training
 
 **BAIR Robot Pushing**
@@ -119,6 +131,14 @@ The same applies, *e.g.*, for video prediction:
 ```
 bash scripts/kinetics/train_frame_autoencoder.sh
 bash scripts/kinetics/train_transformer.sh
+``` 
+
+**UCF101**
+
+The same applies, *e.g.*, for video prediction:
+```
+bash scripts/ucf101/train_frame_autoencoder.sh
+bash scripts/ucf101/train_transformer.sh
 ``` 
 
 **AudioSet-Drums**
@@ -162,6 +182,15 @@ We provide checkpoints for various configurations:
     <td align="center"><a href="https://drive.google.com/file/d/1m_uhOod9ZYHSfykBFWdp_6C58EH-4BNF/view?usp=sharing">checkpoint</a></td>
   </tr>
   <tr>
+    <td>UCF101</td>
+    <td align="center">&check;</td>
+    <td align="center">&cross;</td>
+    <td align="center">&cross;</td>
+    <td align="center">&cross;</td>
+    <td align="center">&cross;</td>
+    <td align="center"><a href="https://drive.google.com/file/d/1ODI3AVluR09bqpDJDON-21bPf6oEzU4a/view?usp=sharing">checkpoint</a></td>
+  </tr>
+  <tr>
     <td>AudioSet-Drum</td>
     <td align="center">&check;</td>
     <td align="center">&cross;</td>
@@ -194,6 +223,12 @@ bash scripts/bairhd/save_videos_unc.sh
 bash scripts/kinetics600/save_videos.sh
 bash scripts/kinetics600/save_videos_p2p.sh
 ``` 
+
+**UCF101**
+
+```
+bash scripts/ucf101/save_videos.sh
+```
 
 **AudioSet-Drums**
 
